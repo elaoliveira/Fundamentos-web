@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
-</head>
-<body>
-   <ul>
-       <li>
-            <a href="index.html"> Home </a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato </a>
-        </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Test</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <ul id="menu">
+      <li>
+        <a href="index.html"> Home </a>
+      </li>
+      <li>
+        <a href="contact.html"> Contact </a>
+      </li>
     </ul>
-   
-    <h1>Sobre a Rafa</h1> 
-  
-<p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-    Officia nam optio velit minus amet eos doloribus mollitia. 
-    </p>
-    <p>
-    Amet ex minus ducimus tenetur earum deserunt, 
-    voluptatibus ipsam inventore, nulla repellendus aliquam?
-</p>
 
-<img src="assets/img/índiceperfil.jpg" alt="Foto do criador desse conteúdo">
+    <h1 class="center">ASPARAGUS:</h1>
+    <div class="container">
+      <div>
+        <img
+          class="br-50 wh-250 p-30"
+          src="assets/img/elaoliveira.png"
+          alt="Page Creator"
+        />
+      </div>
+      <div class="p-30">
+        <p class="justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nam
+          optio velit minus amet eos doloribus mollitia.
+        </p>
+        <p class="justify">
+          Amet ex minus ducimus tenetur earum deserunt, voluptatibus ipsam
+          inventore, nulla repellendus aliquam?
+        </p>
+      </div>
+    </div>
 
-<h2>Meu video predileto:</h2>
+    <h2 class="center">Video Experience:</h2>
 
-<iframe 
-width="560" 
-height="315" 
-src="https://www.youtube.com/embed/guqFqcV4Po0" 
-title="YouTube video player" 
-frameborder="3" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen
-></iframe>
+    <div class="container mb-50">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/GRbmLgiZPHw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+    <hr />
+    <footer>
+      <div class="container">
+        <a href="https://github.com/elaoliveira" target="_blank">
+          <img
+            class="tm-social p-30"
+            src="assets/img/github.png"
+            alt="Icon GitHub"
+          />
+        </a>
+      </div>
 
-</body>
+      <p class="center">All Rights Reserved: Ela Oliv &copy;</p>
+    </footer>
+  </body>
 </html>
