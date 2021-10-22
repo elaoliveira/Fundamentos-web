@@ -1,4 +1,11 @@
 /*Estilos da página index.html*/
+
+html {
+  background: #a88a8a;
+  display: flex;
+  justify-content: center;
+}
+
 .center {
   text-align: center;
 }
@@ -11,12 +18,12 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
-  align-items: center;
+  
 }
 
 #menu li {
   display: inline;
-  padding: 20px;
+  padding: 30px;
 }
 
 #menu li a {
@@ -54,4 +61,40 @@
 
 .ml-50 {
     margin-left: 50px;
+}
+
+.centralizar {
+   display:flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.titulocontact {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #c7d1d6;
+  padding: 5px;
+  border-radius: 50%;
+  background: url('https://avatars.githubusercontent.com/u/89111102?v=4');
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s ease-in-out;
+}
+
+.about-img:hover {
+  background-color: #284d5f80;
+  background-blend-mode: multiply;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 3rem;
 }
