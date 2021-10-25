@@ -9,9 +9,9 @@ por Seletor: querySelector()
 */
 
 // let nome = document.getElementbyId("nome");
-let nome = document.querySelector('#nome');
-let email = document.getElementbyId("email");
-let subject = window.document.getElementbyId("subject");
+let nome = document.getElementById("nome");
+let email = document.getElementById("email");
+let subject = document.getElementById("subject");
 let nomeOk = false;
 let emailOk = false;
 let subjectOk = false;
@@ -32,7 +32,7 @@ function validaNome() {
     }
 }
 
-function validaEmail () {
+function validaEmail() {
     let txtEmail = document.querySelector("#txtEmail");
     
     if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
@@ -46,10 +46,10 @@ function validaEmail () {
     
 }
 
-function validaSubject () {
+function validaSubject() {
     let txtSubject = document.querySelector("#txtSubject");
 
-    if(assunto.value.length >= 100) {
+    if(subject.value.length >= 100) {
         txtSubject.innerHTML = "Texto é muito grande, digite no máximo 100 caracteres";
         txtSubject.style.color = "red";
         txtSubject.style.display = "block";
@@ -59,7 +59,7 @@ function validaSubject () {
     }
 }
 
-function Submit () {
+function Submit() {
     if (nomeOk == true && emailOk == true && subjectOk == true) {
         alert ("Formulário enviado com sucesso!");
     }else{
