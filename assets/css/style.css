@@ -1,0 +1,133 @@
+/*Estilos da página index.html*/
+
+html {
+  background: #a88a8a;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.menu {
+  width: 100%;
+  justify-content: left;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 30px;
+  
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu li a:hover {
+  color: grey;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+.wh {
+  width: 250px;
+  height: 250px;
+}
+
+.tm-social {
+  width: 30px;
+  height: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.centralizar {
+   display:flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.titulocontact {
+  padding: 30px;
+  margin-left: 20;
+  text-align: left;
+}
+
+.navHover {
+  position: relative;
+}
+
+.navHover::after {
+  position: absolute;
+  content: '';
+  background-color: #2274a550;
+  bottom: 0;
+  left: 0;
+  border-radius: 2rem;
+  width: 100%;
+  height: 3px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.2s ease-in;
+}
+
+.navHover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #c7d1d6;
+  padding: 5px;
+  border-radius: 50%;
+  background: url('https://avatars.githubusercontent.com/u/89111102?v=4');
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s ease-in-out;
+}
+
+.about-img:hover {
+  background-color: #284d5f80;
+  background-blend-mode: multiply;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 3rem;
+}
