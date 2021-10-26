@@ -9,19 +9,19 @@ por Seletor: querySelector()
 */
 
 // let nome = document.getElementbyId("nome");
-let nome = document.getElementById("nome");
-let email = document.getElementById("email");
-let subject = document.getElementById("subject");
+let nome =document.getElementById("nome");
+let email =document.getElementById("email");
+let subject =document.getElementById("subject");
 let nomeOk = false;
 let emailOk = false;
 let subjectOk = false;
-let mapa = document.querySelector("#mapa");
+let mapa =document.querySelector("#mapa");
 
-nome.style.width = "100%";
-email.style.width = "100%";
+nome.style.width ="100%";
+email.style.width ="100%";
 
 function validaNome() {
-    let txtNome = document.querySelector("#txtNome");
+    let txtNome =document.querySelector("#txtNome");
     if (nome.value.length < 3) {
         txtNome.innerHTML = "Nome Inválido";
         txtNome.style.color = "red";
